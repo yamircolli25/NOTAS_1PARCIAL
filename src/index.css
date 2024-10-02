@@ -1,0 +1,224 @@
+.body {
+  font-family: 'Noto Sans';
+  background-color: #E0FBE2;
+  color: #000;
+}
+
+.AppBar {
+  background-color: #B0EBB4;
+}
+
+.AppBarTitulo {
+  color: #ffffff;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: 400w;
+  margin: 0px;
+  padding: 20px;
+}
+
+
+
+.derecha {
+  text-align: right;
+}
+
+.BtnNota {
+  background-color: #ACE1AF;
+  margin: 20px;
+  color: #ffffff;
+  text-align: right;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.BtnNota:hover {
+  background-color: green;
+  margin: 20px;
+  color: white;
+  text-align: right;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+
+
+.PanelAgregarNota {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.formulario {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 10px double;
+  border-color: #B0EBB4;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.PanelPrincipal {
+  background-color: white;
+  padding: 20px;
+}
+
+.PanelColeccion {
+  padding: 20px;
+
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+
+}
+
+.col {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+
+
+.parrafo {
+  font-weight: 400w;
+  text-align: left;
+}
+
+
+.PanelCudrado {
+  padding: 20px;
+  font-size: 10px;
+  width: 50%;
+}
+
+
+.col2 {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+.tiitulover {
+  font-weight: 500w;
+  font-weight: bold;
+
+}
+
+.BtnAgregar {
+  background-color: #ACE1AF;
+  margin: 20px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.BtnAgregar:hover {
+  background-color: green;
+  margin: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+Button {
+  background-color: red;
+}
+
+Button:hover {
+  border-color: yellow;
+
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.formControl {
+  width: 500px;
+  height: 80px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .formControl {
+    width: 500px;
+    height: 80px;
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+  .formControl {
+    width: 300px;
+    height: 80px;
+  }
+}

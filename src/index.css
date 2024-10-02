@@ -1,11 +1,11 @@
 .body {
-  font-family: 'Noto Sans';
+  font-family:Georgia, 'Times New Roman', Times, serif'
   background-color: #E0FBE2;
   color: #000;
 }
 
 .AppBar {
-  background-color: #B0EBB4;
+  background-color: #b0d4ed;
 }
 
 .AppBarTitulo {
@@ -29,7 +29,7 @@ h2 {
 }
 
 .BtnNota {
-  background-color: #ACE1AF;
+  background-color: rgb(232, 194, 146);
   margin: 20px;
   color: #ffffff;
   text-align: right;
@@ -41,7 +41,7 @@ h2 {
 }
 
 .BtnNota:hover {
-  background-color: green;
+  background-color: #b0d4ed;
   margin: 20px;
   color: white;
   text-align: right;
@@ -64,7 +64,7 @@ h2 {
   background-color: #ffffff;
   border-radius: 20px;
   border: 10px double;
-  border-color: #B0EBB4;
+  border-color: rgb(232, 194, 146);
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -96,7 +96,7 @@ h2 {
 .col {
   text-align: center;
   padding: 20px;
-  border: 1px solid green;
+  border: 1px solid #b0d4ed;
   border-radius: 10px;
 }
 
@@ -130,8 +130,8 @@ h2 {
 }
 
 .BtnAgregar {
-  background-color: #ACE1AF;
-  margin: 20px;
+  background-color: #b0d4ed;
+  margin: 5px;
   color: #ffffff;
   text-align: center;
   border-radius: 8px;
@@ -142,9 +142,14 @@ h2 {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+ .BtnAgregar img{
+  width: 16px;
+  height: 16px;
+  margin: auto;
+ }
 
 .BtnAgregar:hover {
-  background-color: green;
+  background-color: rgb(232, 194, 146);
   margin: 20px;
   color: white;
   text-align: center;

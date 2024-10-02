@@ -33,11 +33,10 @@ const ColeccionListar = () => {
 
                   <div className="derecha">
                     <Tooltip title="Editar Nota" placement="top">
-
                       <Link
                         to={`/editar/${dato.id}`}
                         className="BtnAgregar"
-                      >
+                      > 
                         Editar
                       </Link>
                     </Tooltip>
@@ -46,7 +45,9 @@ const ColeccionListar = () => {
                       onClick={() => { if (window.confirm('Desea Eliminar Informacion?')) { eliminarColeccion(dato.id) }; }}
                     >
                       <Tooltip title="Elmiinar Nota" placement="top">
-                        Eliminar
+                        <div>
+                          <img src="/src/imagenes/Eliminar.png"/>
+                        </div>
                       </Tooltip>
 
                     </button>

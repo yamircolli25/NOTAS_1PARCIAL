@@ -1,8 +1,19 @@
 .body {
-  font-family:Georgia, 'Times New Roman', Times, serif'
+  font-family:'Dancing Script', cursive;
   background-color: #E0FBE2;
   color: #000;
 }
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
+  font-style: italic; /* También puedes usar la propiedad font-style si deseas cursiva */
+}
+
 
 .AppBar {
   background-color: #b0d4ed;
@@ -96,7 +107,7 @@ h2 {
 .col {
   text-align: center;
   padding: 20px;
-  border: 1px solid #b0d4ed;
+  border: 3px solid #b0d4ed;
   border-radius: 10px;
 }
 

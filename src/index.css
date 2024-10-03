@@ -88,7 +88,7 @@ h2 {
 
 
 .PanelPrincipal {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
 }
 
@@ -116,14 +116,88 @@ h2 {
 .parrafo {
   font-weight: 400w;
   text-align: left;
+  
 }
 
 
+/* Contenedor del panel cuadrado */
 .PanelCudrado {
   padding: 20px;
   font-size: 10px;
   width: 50%;
+  color: antiquewhite;
+  background-color: #333; /* Color de fondo del contenedor */
+  border-radius: 12px;
+  margin: 20px auto; /* Centramos el panel */
 }
+
+/* Estilo de cada tarjeta dentro del panel */
+.NotaItem {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #ffe4b5; /* Color de fondo específico para las notas */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+  color: #333; /* Color de texto */
+}
+
+/* Efecto hover en cada nota */
+.NotaItem:hover {
+  background-color: #b0d4ed; /* Color al hacer hover */
+  transform: scale(1.03);
+}
+
+/* Título de cada tarjeta */
+.NotaTitulo {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Contenido de la nota */
+.NotaContenido {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Contenedor general de las tarjetas */
+.PanelColeccion {
+  margin-top: 20px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Estilo para diferenciar secciones */
+.SeccionEtiqueta {
+  padding: 10px;
+  background-color: #ffcccb;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Botones de acción */
+.BtnAgregar {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #646cff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.BtnAgregar:hover {
+  background-color: #4c4cff;
+}
+
 
 
 .col2 {

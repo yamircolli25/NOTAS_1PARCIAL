@@ -1,36 +1,146 @@
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Tabla de Notas */
+.table-container {
+  width: 80%;
+  margin: 20px auto;
+  overflow-x: auto;
 }
 
+.table-notes {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  text-align: left;
+}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.table-notes th,
+.table-notes td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.table-notes th {
+  background-color: #b0d4ed;
+  color: white;
+}
+
+.table-notes tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-notes td a {
+  color: #646cff;
+  text-decoration: none;
+}
+
+.table-notes td a:hover {
+  color: #535bf2;
+}
+
+/* Botones de Acción */
+.button {
+  background-color: #646cff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #535bf2;
+}
+
+.button.edit {
+  background-color: #4caf50;
+}
+
+.button.delete {
+  background-color: #f44336;
+}
+
+/* Panel de Control */
+.control-panel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+
+/* --- Responsivo --- */
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 768px) {
+  .table-container {
+    width: 100%;
+    margin: 10px auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .table-notes {
+    font-size: 0.9em;
+  }
+
+  .table-notes th,
+  .table-notes td {
+    padding: 8px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+  .table-container {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .table-notes {
+    font-size: 0.8em;
+    display: block;
+    overflow-x: auto;
+  }
+
+  .table-notes th,
+  .table-notes td {
+    padding: 6px;
+  }
+
+  /* Cambiar la disposición de las celdas */
+  .table-notes th {
+    display: block;
+    text-align: right;
+  }
+
+  .table-notes td {
+    display: block;
+    text-align: right;
+  }
+
+  .table-notes tr {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  /* Botones en panel de control */
+  .control-panel {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

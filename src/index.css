@@ -63,8 +63,6 @@ h2 {
   transition: border-color 0.25s;
 }
 
-
-
 .PanelAgregarNota {
   text-align: center;
   width: 100%;
@@ -84,8 +82,6 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .PanelPrincipal {
   background-color: rgb(255, 255, 255);
@@ -311,4 +307,68 @@ button:focus-visible {
     width: 300px;
     height: 80px;
   }
+}
+/* Tamaño más pequeño para las notas */
+/* Tamaño más pequeño para las notas */
+.NotaItem {
+  background: #ffe4b5;
+  border-radius: 8px;
+  padding: 10px; /* Reducir padding para que la nota se vea más pequeña */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 220px; /* Ancho más pequeño para compactar las notas */
+  height: auto; /* Permitir que la altura se ajuste al contenido */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover más sutil */
+.NotaItem:hover {
+  background-color: #b0d4ed;
+  transform: scale(1.02);
+}
+
+
+/* Contenedor de detalles de la nota */
+.NotaDetalles {
+  padding: 10px;
+  border: 1px solid #b0d4ed; /* Un borde suave para el contenido desplegado */
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #f4f4f4; /* Fondo para el contenido */
+  font-size: 12px; /* Reducir el tamaño del texto */
+}
+
+
+/* Reducir el margen entre las notas */
+.ListaVertical {
+  display: flex;
+  flex-direction: row; /* Cambiar la dirección a filas para que se vean como tarjetas */
+  flex-wrap: wrap; /* Permitir que se ajusten al ancho del contenedor */
+  gap: 10px; /* Espacio más pequeño entre notas */
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  justify-content: flex-start; /* Alinear las notas hacia la izquierda */
+}
+
+/* Ajustar las tarjetas de nota */
+.NotaCard {
+  padding: 8px; /* Reducir el padding interno */
+  margin: 5px; /* Reducir el margen */
+  font-size: 14px; /* Ajustar tamaño de fuente para que se vea más compacto */
+  width: 200px; /* Definir un ancho fijo */
+}
+
+/* Ajustar tamaño de título y contenido */
+.titulo-pequeno {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.parrafo {
+  font-size: 12px; /* Reducir el tamaño del texto */
+  line-height: 1.2; /* Reducir el espacio entre líneas */
+  color: #555;
 }
